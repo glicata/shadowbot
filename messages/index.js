@@ -38,18 +38,6 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 })
 
 
-.matches('graduate tuition', (session, args) => {
-    session.send("The cost for graduate tuition is $382.00 per credit");
-});
-/*
-.matches('undergaduate tuition' , (session, args) => {
-    session.send('The cost for undergradute tuition is $18,016 per semester.');
-});
-
-.onDefault((session) => {
-    session.send('Sorry, I did not understand \'%s\'.', session.message.text);
-});
-*/
 bot.dialog('/', intents);    
 
 if (useEmulator) {
