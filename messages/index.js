@@ -38,7 +38,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 })
 
 .matches('graduate tuition', (session, args) => {
-    session.send("I need some more information! Graduate or undergraduate tuition?");
+    session.send("The cost for Graduate Tuition is $386 per credit.");
 })
 
 
