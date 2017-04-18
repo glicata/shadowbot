@@ -49,7 +49,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send("No! Monmouth University is very unique! The University does not use and graduate or teaching assistants.");
 })
 
-.matches('parking fee', (session, args) => {
+.matches('parking', (session, args) => {
     session.send("There is a $350 fee for resident students who wish to have their car on campus. There is no fee for commuting students.");
 })
 
