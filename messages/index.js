@@ -37,6 +37,10 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send("I need some more information! Graduate or undergraduate tuition?");
 })
 
+.matches('graduate tuition', (session, args) => {
+    session.send("I need some more information! Graduate or undergraduate tuition?");
+})
+
 
 bot.dialog('/', intents);    
 
