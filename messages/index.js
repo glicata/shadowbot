@@ -32,6 +32,19 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 /*
 .matches('<yourIntent>')... See details at http://docs.botframework.com/builder/node/guides/understanding-natural-language/
 */
+
+.matches('tuition', (session) => {
+    session.send("I need some more information! Graduate or undergraduate tuition?");
+});
+
+.matches('graduate tuition', (session) => {
+    session.send("The cost for graduate tuition is $382.00 per credit");
+});
+
+.matches('undergaduate tuition' , (session) => {
+    session.send('The cost for undergradute tuition is $18,016 per credit.');
+});
+
 .onDefault((session) => {
     session.send('Sorry, I did not understand \'%s\'.', session.message.text);
 });
