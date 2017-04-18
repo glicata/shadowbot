@@ -41,6 +41,21 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send("The cost for Graduate Tuition is $386 per credit.");
 })
 
+.matches('undergraduate tuition', (session, args) => {
+    session.send("The cost for undergraduate tuition is about $18,000 per semester");
+})
+
+.matches('teaching assistants', (session, args) => {
+    session.send("No! Monmouth University is very unique! The University does not use and graduate or teaching assistants.");
+})
+
+.matches('parking fee', (session, args) => {
+    session.send("There is a $350 fee for resident students who wish to have their car on campus. There is no fee for commuting students.");
+})
+
+
+
+
 
 bot.dialog('/', intents);    
 
