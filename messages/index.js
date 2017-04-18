@@ -42,7 +42,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 });
 
 .matches('undergaduate tuition' , (session) => {
-    session.send('The cost for undergradute tuition is $18,016 per credit.');
+    session.send('The cost for undergradute tuition is $18,016 per semester.');
 });
 
 .onDefault((session) => {
