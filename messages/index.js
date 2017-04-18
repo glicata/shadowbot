@@ -37,11 +37,11 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send("I need some more information! Graduate or undergraduate tuition?");
 });
 
-/*
+
 .matches('graduate tuition', (session, args) => {
     session.send("The cost for graduate tuition is $382.00 per credit");
 });
-
+/*
 .matches('undergaduate tuition' , (session, args) => {
     session.send('The cost for undergradute tuition is $18,016 per semester.');
 });
