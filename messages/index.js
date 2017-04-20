@@ -34,7 +34,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 */
 
 .matches('tuition', (session, args) => {
-    session.send("I need some more information! Graduate or undergraduate tuition?");
+    session.send("FREE TUITION?");
 })
 
 .matches('graduate tuition', (session, args) => {
